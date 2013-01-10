@@ -1,21 +1,8 @@
 <!DOCTYPE html>
-<!--
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
+<!-- Dale Tupling
+Project: Android Demo Application
+Term: 0113
+Class: Avdanced Visual Frameworks
 -->
 <html>
     <head>
@@ -23,20 +10,61 @@
         <meta name="format-detection" content="telephone=no" />
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>Hello World</title>
+        <script src="js/libs/modernizr.custom.min.js"></script>
+        <title>Android Demo Application</title>
     </head>
     <body>
-        <div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
+        <div data-role="page" id="main" data-theme="a">
+            <div data-role="header" data-position="inline">
+                <h1>Android Demo Application</h1>
             </div>
-        </div>
-        <script type="text/javascript" src="cordova-2.3.0.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript">
-            app.initialize();
-        </script>
-    </body>
+                <div data-role="content">
+                    <div id="myInformation">
+                        <ul data-role="listview">
+                            <li>
+                                <h3>Dale Tupling</h3>
+                                <p>Term: 0113</p>
+                                <p>Advanced Visual Frameworks</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="content-primary">   
+                        <ul data-role="listview">
+                            <li data-role="list-divider-a" data-theme="a">Device Features</li>
+                            <li><a href="#utilities" data-icon="arrow-r" data-iconpos="right" data>Geolocation</a></li>
+                            <li><a href="#credit" data-icon="arrow-r" data-iconpos="right">Notification</a></li>
+                            <li><a href="#mortgage" data-icon="arrow-r" data-iconpos="right">Device Information</a></li>
+                            <li><a href="#insurance" data-icon="arrow-r" data-iconpos="right">Camera</a></li>
+                            <li><a href="#loan" data-icon="arrow-r" data-iconpos="right">Accelerometer</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                 <div class="content">
+                    <div class="content-primary">   
+                        <ul data-role="listview">
+                            <li data-role="list-divider-a" data-theme="a">JSON-P Data API's</li>
+                            <li><a href="#utilities" data-icon="arrow-r" data-iconpos="right" data>Facebook</a></li>
+                            <li><a href="#credit" data-icon="arrow-r" data-iconpos="right">Twitter Feed</a></li>
+            
+                        </ul>
+                    </div>
+                </div>
+                 <div class="content">
+                    <div class="content-primary">   
+                        <ul data-role="listview">
+                            <li data-role="list-divider-a" data-theme="a">Research Topics</li>
+                            <li><a href="#utilities" data-icon="arrow-r" data-iconpos="right" data>Discussion 1</a></li>
+                            <li><a href="#credit" data-icon="arrow-r" data-iconpos="right">Discussion 2</a></li>
+                            <li><a href="#mortgage" data-icon="arrow-r" data-iconpos="right">Discussion 3</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    <link rel="stylesheet" href="css/jquery.mobile-1.2.0.min.css" />
+    <script type="text/javascript" src="js/libs/jquery-1.8.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+    <body>
 </html>
