@@ -10,11 +10,7 @@
 
 
 /* Swatches */
-.content{
-	margin-top: 25px;
-}
-
-* A
+/* A
 -----------------------------------------------------------------------------------------------------------*/
 
 .ui-bar-a {
@@ -62,7 +58,7 @@
 .ui-overlay-a {
 	border: 1px solid #aaaaaa /*{a-body-border}*/;
 	color: #ffffff /*{a-body-color}*/;
-	text-shadow: 0 /*{a-body-shadow-x}*/ 1px /*{a-body-shadow-y}*/ 0 /*{a-body-shadow-radius}*/ #ffffff /*{a-body-shadow-color}*/;
+	text-shadow: 0 /*{a-body-shadow-x}*/ 0px /*{a-body-shadow-y}*/ 0 /*{a-body-shadow-radius}*/ #ffffff /*{a-body-shadow-color}*/;
 	background-image: url(../img/bg.png);
 }
 .ui-overlay-a {
@@ -427,12 +423,6 @@ a.ui-link-inherit {
 .ui-checkbox-on .ui-icon,
 .ui-radio-on .ui-icon {
 	background-color: #8abd48 /*{global-active-background-color}*/; /* NOTE: this hex should match the active state color. It's repeated here for cascade */
-}
-
-/* loading icon */
-.ui-icon-loading {
-	background: url(images/ajax-loader.gif);
-	background-size: 46px 46px;
 }
 
 
@@ -1377,7 +1367,7 @@ label.ui-submit { font-size: 16px; line-height: 1.4; font-weight: normal; margin
 }
 .ui-collapsible-inset { margin: .5em 0; }
 .ui-collapsible-heading { font-size: 16px; display: block; margin: 0 -15px; padding: 0; position: relative; }
-.ui-collapsible-inset .ui-collapsible-heading { margin: 0; }
+.ui-collapsible-inset .ui-collapsible-heading {  }
 .ui-collapsible-heading .ui-btn { text-align: left; margin: 0; border-left-width: 0; border-right-width: 0; }
 .ui-collapsible-inset .ui-collapsible-heading .ui-btn { border-right-width: 1px; border-left-width: 1px; }
 .ui-collapsible-collapsed + .ui-collapsible:not(.ui-collapsible-inset) .ui-collapsible-heading .ui-btn { border-top-width: 0; }
@@ -1393,7 +1383,8 @@ label.ui-submit { font-size: 16px; line-height: 1.4; font-weight: normal; margin
 .ui-collapsible-heading-status { position: absolute; top: -9999px; left:0px; }
 .ui-collapsible-content {
 	display: block;
-	margin: 0 -15px;	
+	color: #000000;
+	margin: 0 15px;	
 	padding: 10px 15px;
 	border-left-width: 0;
 	border-right-width: 0;
@@ -1402,7 +1393,7 @@ label.ui-submit { font-size: 16px; line-height: 1.4; font-weight: normal; margin
 }
 .ui-collapsible-inset .ui-collapsible-content { margin: 0; border-right-width: 1px; border-left-width: 1px; }
 .ui-collapsible-content-collapsed { display: none; }
-.ui-collapsible-set { margin: .5em 0; }
+.ui-collapsible-set { margin-top: 0px; }
 .ui-collapsible-set .ui-collapsible { margin: -1px 0 0; }
 .ui-collapsible-set .ui-collapsible:first-child { margin-top: 0; }
 .ui-controlgroup, fieldset.ui-controlgroup { padding: 0; margin: .5em 0; zoom: 1; }
@@ -1727,8 +1718,8 @@ textarea.ui-mini { height: 45px; }
 	.ui-hide-label textarea.ui-input-text, 
 	.ui-hide-label .ui-input-search { width: 100%; }
 	.ui-input-search input.ui-input-text { width: 98%; /*echos rule from above*/ }
-}
-.ui-listview { margin: 0; }
+
+.ui-listview { margin-top: 25px; margin-bottom: 0px; }
 ol.ui-listview, ol.ui-listview .ui-li-divider { counter-reset: listnumbering; }
 .ui-content .ui-listview { margin: -15px; }
 .ui-collapsible-content > .ui-listview { margin: -10px -15px; }

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- Dale Tupling
-Project: Android Demo Application
+Project: iOS Demo Application
 Term: 0113
 Class: Avdanced Visual Frameworks
 -->
@@ -8,8 +8,10 @@ Class: Avdanced Visual Frameworks
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="format-detection" content="telephone=no" />
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="330"/>
+        <!-- viewport used to automatically adjust to page width depending on device page is viewed on -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="js/libs/modernizr.custom.min.js"></script>
         <title>Android Demo Application</title>
     </head>
@@ -18,8 +20,7 @@ Class: Avdanced Visual Frameworks
             <div data-role="header" data-position="inline">
                 <h1>Android Demo Application</h1>
             </div>
-                <div data-role="content">
-                    <div id="myInformation">
+                <section id="info">
                         <ul data-role="listview">
                             <li>
                                 <h3>Dale Tupling</h3>
@@ -27,10 +28,8 @@ Class: Avdanced Visual Frameworks
                                 <p>Advanced Visual Frameworks</p>
                             </li>
                         </ul>
-                    </div>
-                </div>
-                <div class="content">
-                    <div class="content-primary">   
+                </section>
+                <section id="features" class="features">
                         <ul data-role="listview">
                             <li data-role="list-divider-a" data-theme="a">Device Features</li>
                             <li><a href="#" data-icon="arrow-r" data-iconpos="right" data>Geolocation</a></li>
@@ -39,29 +38,45 @@ Class: Avdanced Visual Frameworks
                             <li><a href="#" data-icon="arrow-r" data-iconpos="right">Camera</a></li>
                             <li><a href="#" data-icon="arrow-r" data-iconpos="right">Accelerometer</a></li>
                         </ul>
-                    </div>
-                </div>
+                </section>
 
-                 <div class="content">
-                    <div class="content-primary">   
+                 <section id="dataAPI" class="dataAPI">
                         <ul data-role="listview">
                             <li data-role="list-divider-a" data-theme="a">JSON-P Data API's</li>
-                            <li><a href="#" data-icon="arrow-r" data-iconpos="right" data>Facebook</a></li>
+                            <li><a href="#" data-icon="arrow-r" data-iconpos="right" data>Instagram</a></li>
                             <li><a href="#" data-icon="arrow-r" data-iconpos="right">Twitter Feed</a></li>
             
                         </ul>
-                    </div>
-                </div>
-                 <div class="content">
-                    <div class="content-primary">   
+                </section>
+                 <section id="discussion" class="discussion"  data-role="collapsible-set">  
+                    <div>
                         <ul data-role="listview">
                             <li data-role="list-divider-a" data-theme="a">Research Topics</li>
-                            <li><a href="#" data-icon="arrow-r" data-iconpos="right" data>Discussion 1</a></li>
-                            <li><a href="#" data-icon="arrow-r" data-iconpos="right">Discussion 2</a></li>
-                            <li><a href="#" data-icon="arrow-r" data-iconpos="right">Discussion 3</a></li>
                         </ul>
                     </div>
-                </div>
+                    <div data-role="collapsible" data-collapsed="true" data-inset="true">
+                        <h3>Data Research and Project Intent</h3>
+                         <p>With the growth of social network in the world it is apparent that a good portion of internet users at least have a Facebook or even a Twitter account. With this developers have worked to allow users to shop with their Twitter/Facebook logins creating less headache on the user to have to remember all their accounts. Although Facebook started this trend twitter has been stepping up to the plate to also allow their users to use their accounts for other websites such has blogging websites, and even shopping websites in which they would use their twitter login information to make payments on said shopping sites.</p>
+
+                        <p>We would need to use JSON-P particularly because the fact it is a client side data source.  It is also developed in in a way that API’s were specifically intended to. With that being said it allows developers to access the data client side regardless of what server is requesting access to it. This is important to developers to develop websites so that the user will be able to access this data that is outside of the original web server.</p> 
+
+                        <p>Based on the search results for JSON – P it has become clear that some Native device features may not pair well with these data resources. However some of the data resources I find that could use some of the Native device features would be the specifically the Shopping category as many user like to find out where the closest shopping malls may be, or where the nearest item they may be searching for it as thus using the Geolocation feature natively found on many devices today. Another is the Social category, since in today’s society everyone and I mean everyone takes pictures of everything. You could integrate the camera into this particular Social API’s and allow the user to post pictures they have just taken.</p>
+
+                        <p>Intentions I have for my Demo app are to include the required source in which is Twitter, however along with this source I will also be including a Instagram, which is a photo sharing form of social networking.</p>
+
+                        <p>Workflow has never been my cup of tea, however over the past couple months and the required time needed to accomplish each project for the past couple classes I have found my self to be getting better with the workflow piece. I used to procrastinate and do the entire project on the last day, and then submit it an hour or sometime even minutes before the deadline. Even though I still struggle with workflow I have made it a point to at least one day ahead of the project timeline.</p>
+
+                    </div>
+                    <div data-role="collapsible" data-collapsed="true">
+                        <h3>Accessibility</h3>
+                        <p>Content Coming Soon!</p>
+                    </div>
+                    <div data-role="collapsible" data-collapsed="true">
+                        <h3>Industry Research</h3>
+                        <p>Content Coming Soon!</p>
+                    </div>
+
+                </section>
             </div>
     <link rel="stylesheet" href="css/jquery.mobile-1.2.0.min.css" />
     <script type="text/javascript" src="js/libs/jquery-1.8.3.min.js"></script>

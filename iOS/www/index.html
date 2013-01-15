@@ -8,8 +8,10 @@ Class: Avdanced Visual Frameworks
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="format-detection" content="telephone=no" />
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="330"/>
+        <!-- viewport used to automatically adjust to page width depending on device page is viewed on -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="js/libs/modernizr.custom.min.js"></script>
         <title>iOS Demo Application</title>
     </head>
@@ -18,8 +20,7 @@ Class: Avdanced Visual Frameworks
             <div data-role="header" data-position="inline">
                 <h1>iOS Demo Application</h1>
             </div>
-                <div data-role="content">
-                    <div id="myInformation">
+                <section id="info">
                         <ul data-role="listview">
                             <li>
                                 <h3>Dale Tupling</h3>
@@ -27,9 +28,8 @@ Class: Avdanced Visual Frameworks
                                 <p>Advanced Visual Frameworks</p>
                             </li>
                         </ul>
-                    </div>
-                </div>
-                <div class="content">
+                </section>
+                <section id="features" class="features">
                         <ul data-role="listview">
                             <li data-role="list-divider-a" data-theme="a">Device Features</li>
                             <li><a href="#" data-icon="arrow-r" data-iconpos="right" data>Geolocation</a></li>
@@ -38,23 +38,23 @@ Class: Avdanced Visual Frameworks
                             <li><a href="#" data-icon="arrow-r" data-iconpos="right">Camera</a></li>
                             <li><a href="#" data-icon="arrow-r" data-iconpos="right">Accelerometer</a></li>
                         </ul>
-                </div>
+                </section>
 
-                 <div class="content">
+                 <section id="dataAPI" class="dataAPI">
                         <ul data-role="listview">
                             <li data-role="list-divider-a" data-theme="a">JSON-P Data API's</li>
-                            <li><a href="#" data-icon="arrow-r" data-iconpos="right" data>Facebook</a></li>
+                            <li><a href="#" data-icon="arrow-r" data-iconpos="right" data>Instagram</a></li>
                             <li><a href="#" data-icon="arrow-r" data-iconpos="right">Twitter Feed</a></li>
             
                         </ul>
-                </div>
-                 <div class="content" data-role="collapsible-set">  
-                    <div class="title">
+                </section>
+                 <section id="discussion" class="discussion"  data-role="collapsible-set">  
+                    <div>
                         <ul data-role="listview">
                             <li data-role="list-divider-a" data-theme="a">Research Topics</li>
                         </ul>
                     </div>
-                    <div data-role="collapsible" data-collapsed="true">
+                    <div data-role="collapsible" data-collapsed="true" data-inset="true">
                         <h3>Data Research and Project Intent</h3>
                          <p>With the growth of social network in the world it is apparent that a good portion of internet users at least have a Facebook or even a Twitter account. With this developers have worked to allow users to shop with their Twitter/Facebook logins creating less headache on the user to have to remember all their accounts. Although Facebook started this trend twitter has been stepping up to the plate to also allow their users to use their accounts for other websites such has blogging websites, and even shopping websites in which they would use their twitter login information to make payments on said shopping sites.</p>
 
@@ -76,7 +76,7 @@ Class: Avdanced Visual Frameworks
                         <p>Content Coming Soon!</p>
                     </div>
 
-                </div>
+                </section>
             </div>
     <link rel="stylesheet" href="css/jquery.mobile-1.2.0.min.css" />
     <script type="text/javascript" src="js/libs/jquery-1.8.3.min.js"></script>
