@@ -12,6 +12,7 @@ Class: Avdanced Visual Frameworks
         <meta name="MobileOptimized" content="330"/>
         <!-- viewport used to automatically adjust to page width depending on device page is viewed on -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/index.css" />
         <script src="js/libs/modernizr.custom.min.js"></script>
         <title>iOS Demo Application</title>
     </head>
@@ -20,18 +21,18 @@ Class: Avdanced Visual Frameworks
             <div data-role="header" data-position="inline">
                 <h1>iOS Demo Application</h1>
             </div>
-                <section id="info">
-                        <ul data-role="listview">
-                            <li>
-                                <h3>Dale Tupling</h3>
-                                <p>Term: 0113</p>
-                                <p>Advanced Visual Frameworks</p>
-                            </li>
-                        </ul>
+                <section id="info" class="info">
+                    <ul data-role="listview">
+                        <li>
+                            <h3>Dale Tupling</h3>
+                            <p>Term: 0113</p>
+                            <p>Advanced Visual Frameworks</p>
+                        </li>
+                    </ul>
                 </section>
                 <section id="features" class="features">
-                        <ul data-role="listview">
-                            <li data-role="list-divider-a" data-theme="a">Device Features</li>
+                    <ul data-role="listview">
+                        <li data-role="list-divider-a" data-theme="a">Device Features</li>
                             <li><a href="#" data-icon="arrow-r" data-iconpos="right" data>Geolocation</a></li>
                             <li><a href="#" data-icon="arrow-r" data-iconpos="right">Notification</a></li>
                             <li><a href="#" data-icon="arrow-r" data-iconpos="right">Device Information</a></li>
@@ -39,14 +40,12 @@ Class: Avdanced Visual Frameworks
                             <li><a href="#" data-icon="arrow-r" data-iconpos="right">Accelerometer</a></li>
                         </ul>
                 </section>
-
-                 <section id="dataAPI" class="dataAPI">
-                        <ul data-role="listview">
-                            <li data-role="list-divider-a" data-theme="a">JSON-P Data API's</li>
-                            <li><a href="#" data-icon="arrow-r" data-iconpos="right" data>Instagram</a></li>
-                            <li><a href="#" data-icon="arrow-r" data-iconpos="right">Twitter Feed</a></li>
-            
-                        </ul>
+                <section id="dataAPI" class="dataAPI">
+                    <ul data-role="listview">
+                        <li data-role="list-divider-a" data-theme="a">JSON-P Data API's</li>
+                            <li><a href="espn.html" data-ajax="false">ESPN</a></li>
+                            <li><a href="twitter.html">Twitter</a></li>            
+                    </ul>
                 </section>
                  <section id="discussion" class="discussion"  data-role="collapsible-set">  
                     <div>
