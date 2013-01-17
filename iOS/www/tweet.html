@@ -3,8 +3,8 @@
 Project: iOS Demo Application
 Term: 0113
 Class: Avdanced Visual Frameworks
-File: ESPN.html
-Contains dynamically added headlines from the ESPN API
+File: tweet.html 
+Contains dynamically added twitter updates.
 -->
 <html>
     <head>
@@ -19,10 +19,10 @@ Contains dynamically added headlines from the ESPN API
         <title>iOS Demo Application</title>
     </head>
     <body>
-        <div data-role="page" id="espnHead" data-theme="a">
+        <div data-role="page" id="tweetHead" data-add-back-btn="true" data-theme="a">
             <div data-role="header" data-position="inline">
                 <a href="index.html" data-ajax="false" data-icon="home">Home</a>
-                <h1>ESPN Headlines</h1>
+                <h1>Twitter Feeds</h1>
             </div>
                 <section id="info" class="info">
                     <ul data-role="listview">
@@ -33,7 +33,7 @@ Contains dynamically added headlines from the ESPN API
                         </li>
                     </ul>
                 </section>
-                <section id="featHeadline" class="featHeadline" data-filter="true">
+                <section id="tweetSection" class="tweetSection" data-filter="true">
 
                 </section>
 
