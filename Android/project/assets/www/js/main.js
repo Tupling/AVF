@@ -15,7 +15,7 @@ $.ajax({
     type: "GET",
     dataType: "json",
     data: " ",
-    url: 'http://api.espn.com/v1/sports/news/headlines/top?limit=5&_accept=text/json&apikey=kc3vzscknxjjxawgyr9966hq',
+    url: 'http://api.espn.com/v1/sports/news/headlines/top?limit=10&_accept=text/json&apikey=kc3vzscknxjjxawgyr9966hq',
     success: function(data) {
     	console.log(data);
 			$.each(data.headlines, function() {
