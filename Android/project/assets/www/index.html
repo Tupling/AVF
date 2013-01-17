@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- Dale Tupling
-Project: iOS Demo Application
+Project: Android Demo Application
 Term: 0113
 Class: Avdanced Visual Frameworks
 -->
@@ -12,6 +12,7 @@ Class: Avdanced Visual Frameworks
         <meta name="MobileOptimized" content="330"/>
         <!-- viewport used to automatically adjust to page width depending on device page is viewed on -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/index.css" />
         <script src="js/libs/modernizr.custom.min.js"></script>
         <title>Android Demo Application</title>
     </head>
@@ -20,33 +21,31 @@ Class: Avdanced Visual Frameworks
             <div data-role="header" data-position="inline">
                 <h1>Android Demo Application</h1>
             </div>
-                <section id="info">
-                        <ul data-role="listview">
-                            <li>
-                                <h3>Dale Tupling</h3>
-                                <p>Term: 0113</p>
-                                <p>Advanced Visual Frameworks</p>
-                            </li>
-                        </ul>
+                <section id="info" class="info">
+                    <ul data-role="listview">
+                        <li>
+                            <h3>Dale Tupling</h3>
+                            <p>Term: 0113</p>
+                            <p>Advanced Visual Frameworks</p>
+                        </li>
+                    </ul>
                 </section>
                 <section id="features" class="features">
-                        <ul data-role="listview">
-                            <li data-role="list-divider-a" data-theme="a">Device Features</li>
-                            <li><a href="#" data-icon="arrow-r" data-iconpos="right" data>Geolocation</a></li>
+                    <ul data-role="listview">
+                        <li data-role="list-divider-a" data-theme="a">Device Features</li>
+                            <li><a href="#" data-icon="arrow-r" data-iconpos="right">Geolocation</a></li>
                             <li><a href="#" data-icon="arrow-r" data-iconpos="right">Notification</a></li>
                             <li><a href="#" data-icon="arrow-r" data-iconpos="right">Device Information</a></li>
                             <li><a href="#" data-icon="arrow-r" data-iconpos="right">Camera</a></li>
                             <li><a href="#" data-icon="arrow-r" data-iconpos="right">Accelerometer</a></li>
                         </ul>
                 </section>
-
-                 <section id="dataAPI" class="dataAPI">
-                        <ul data-role="listview">
-                            <li data-role="list-divider-a" data-theme="a">JSON-P Data API's</li>
-                            <li><a href="#" data-icon="arrow-r" data-iconpos="right" data>Instagram</a></li>
-                            <li><a href="#" data-icon="arrow-r" data-iconpos="right">Twitter Feed</a></li>
-            
-                        </ul>
+                <section id="dataAPI" class="dataAPI">
+                    <ul data-role="listview">
+                        <li data-role="list-divider-a" data-theme="a">JSON-P Data API's</li>
+                            <li><a href="espn.html" data-ajax="false" id="espn">ESPN</a></li>
+                            <li><a href="tweet.html" data-ajax="false">Twitter</a></li>            
+                    </ul>
                 </section>
                  <section id="discussion" class="discussion"  data-role="collapsible-set">  
                     <div>
@@ -54,7 +53,7 @@ Class: Avdanced Visual Frameworks
                             <li data-role="list-divider-a" data-theme="a">Research Topics</li>
                         </ul>
                     </div>
-                    <div data-role="collapsible" data-collapsed="true" data-inset="true">
+                    <div data-role="collapsible" data-collapsed="true" data-inset="true" data-icon="non">
                         <h3>Data Research and Project Intent</h3>
                          <p>With the growth of social network in the world it is apparent that a good portion of internet users at least have a Facebook or even a Twitter account. With this developers have worked to allow users to shop with their Twitter/Facebook logins creating less headache on the user to have to remember all their accounts. Although Facebook started this trend twitter has been stepping up to the plate to also allow their users to use their accounts for other websites such has blogging websites, and even shopping websites in which they would use their twitter login information to make payments on said shopping sites.</p>
 
@@ -82,4 +81,6 @@ Class: Avdanced Visual Frameworks
     <script type="text/javascript" src="js/libs/jquery-1.8.3.min.js"></script>
     <script src="js/libs/jquery.mobile-1.2.0.min.js"></script>
     <body>
+</html>
+body>
 </html>
