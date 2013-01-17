@@ -1,6 +1,12 @@
-$(document).on("pageinit", function(){
-	getESPN();
-})
+
+    var path = window.location.pathname;
+        if (path.indexOf('/espn.html') !== -1){
+            getESPN();
+        } else {
+            getTweet();
+        }
+
+
 
 
 
@@ -39,5 +45,11 @@ $.ajax({
 
 });
 }
+
+/*function getTweet () {
+    $.ajax({
+
+    })
+}*/
 
 
