@@ -1,3 +1,8 @@
+/*Dale Tupling*/
+/*Advanced Visual Framework*/
+/*Term: 0113*/
+
+/* Start ESPN Headlines Styling */
 .featHeadline {
 	color: #000000;
 }
@@ -40,4 +45,70 @@
 
 .description{
 	padding-right: 5px;
+}
+
+/*End ESPN Headline Styling */
+
+/*Start Twitter feed styling*/
+
+.tweetHeadDiv {
+	background-color: #084B8A;
+	text-align: center;
+	font-family: sans-serif;
+	font-style: bold;
+	color: #FFFFFF;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	margin-bottom: 0px;
+	height: 45px;
+
+}
+
+.tweetsDiv {
+	background-color: #FFFFFF;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	border-top: 1px solid;
+	border-color: #CCCCCC;
+}
+
+.tweetSection {
+	color: #000000;
+	border-left: 1px solid;
+	border-right: 1px solid;
+	border-bottom: 1px solid;
+	border-color: #CCCCCC;
+	width: 85%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 20px;
+}
+
+.tweetSection h3 {
+	font-size: 1em;
+	padding-left: 20px;
+
+}
+
+.tweetSection img {
+	float: left;
+	border-radius: 10px;
+
+}
+
+.twitHandle {
+	font-size: .5em;
+}
+
+.content {
+	padding-top: 3px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.date {
+	font-style: italic;
+	font-size: .6em;
+	color: #0431B4;
 }
