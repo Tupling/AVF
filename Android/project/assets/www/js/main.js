@@ -8,7 +8,7 @@
 
 
 
-
+//Function to get ESPN Data using ESPN Headlines API
 
 function getESPN (){
 $.ajax({
@@ -45,6 +45,8 @@ $.ajax({
 });
 }
 
+//Function to retrieve Twitter headlines for a specified search string using Twitters GET API
+
 function getTweet () {
     $.ajax({
         type: "GET",
@@ -77,6 +79,6 @@ function getTweet () {
             error: function() {
             }
     });
-}
 
+}
 

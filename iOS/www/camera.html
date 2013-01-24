@@ -19,7 +19,7 @@ Contains dynamically added twitter updates.
         <script src="js/libs/modernizr.custom.min.js"></script>
         <title>iOS Demo Application</title>
     </head>
-    <body>
+    <body onload="onBodyLoad();">
         <div data-role="page" id="tweetHead" data-add-back-btn="true" data-theme="a">
             <div data-role="header" data-position="inline">
                 <a href="index.html" data-ajax="false" data-icon="home">Home</a>
@@ -39,8 +39,8 @@ Contains dynamically added twitter updates.
                         <img id="smallImage" src="" alt="Captured Image" />
                         <ul data-role="listview">
                             <li data-role="list-divider-a" data-theme="a">Camera Options</li>
-                            <li><a onclick="capturePhoto();">Capture Photo</a></li>
-                            <li><a onclick="capturePhotoEdit();">Capture Edited Photo</a></li>
+                            <li><a onclick="capturePhoto();" data-ajax="false">Capture Photo</a></li>
+                            <li><a onclick="capturePhotoEdit();" data-ajax="false">Capture Edited Photo</a></li>
                         </ul>
                     </div>
                 </section>

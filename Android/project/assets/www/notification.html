@@ -7,23 +7,19 @@ File: tweet.html
 Contains dynamically added twitter updates.
 -->
 <html>
-    <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="format-detection" content="telephone=no" />
-        <meta name="HandheldFriendly" content="True">
-        <meta name="MobileOptimized" content="330"/>
-        <!-- viewport used to automatically adjust to page width depending on device page is viewed on -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <script type="text/javascript" src="cordova-2.3.0.js"></script>
         <link rel="stylesheet" href="css/index.css" />
-        <script type="text/javascript" charset="utf-8" src="cordova-2.3.0.js"></script>
         <script src="js/libs/modernizr.custom.min.js"></script>
-        <title>iOS Demo Application</title>
+        <title>Android Demo Application</title>
     </head>
-    <body  onload="onBodyLoad();">
+    <body>
         <div data-role="page" id="tweetHead" data-add-back-btn="true" data-theme="a">
             <div data-role="header" data-position="inline">
                 <a href="index.html" data-ajax="false" data-icon="home">Home</a>
-                <h1>iOS Notification Demo</h1>
+                <h1>Android Notification Demo</h1>
             </div>
                 <section id="info" class="info">
                     <ul data-role="listview">
@@ -38,7 +34,7 @@ Contains dynamically added twitter updates.
                     <div data-role="content">
                         <ul data-role="listview" id="noticeList">
                             <li data-role="list-divider-a" data-theme="a">Notification</li>
-                            <li><a onclick="showConfirm();" data-ajax="false">Load Device Information</a></li>
+                            <li><a href="#" onClick="showAlert();" data-ajax="false">Load Device Information</a></li>
                         </ul>
                     </div>
                 </section>
@@ -47,6 +43,7 @@ Contains dynamically added twitter updates.
     <link rel="stylesheet" href="css/jquery.mobile-1.2.0.min.css" />
     <script type="text/javascript" src="js/libs/jquery-1.8.3.min.js"></script>
     <script src="js/libs/jquery.mobile-1.2.0.min.js"></script>
+
     <script type="text/javascript" src="js/libs/notification.js"></script>
     <body>
 </html>

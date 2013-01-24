@@ -1,8 +1,8 @@
 
     // Wait for Cordova to load
-    //
+function onBodyLoad() {
     document.addEventListener("deviceready", onDeviceReady, false);
-
+}
     // Cordova is ready
     //
     function onDeviceReady() {
