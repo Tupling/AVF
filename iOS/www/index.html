@@ -11,7 +11,7 @@ Class: Avdanced Visual Frameworks
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="330"/>
         <!-- viewport used to automatically adjust to page width depending on device page is viewed on -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <link rel="stylesheet" href="css/index.css" />
         <script src="js/libs/modernizr.custom.min.js"></script>
         <title>iOS Demo Application</title>
@@ -33,11 +33,10 @@ Class: Avdanced Visual Frameworks
                 <section id="features" class="features">
                     <ul data-role="listview">
                         <li data-role="list-divider-a" data-theme="a">Device Features</li>
-                            <li><a href="#" data-icon="arrow-r" data-iconpos="right">Geolocation</a></li>
-                            <li><a href="#" data-icon="arrow-r" data-iconpos="right">Notification</a></li>
-                            <li><a href="#" data-icon="arrow-r" data-iconpos="right">Device Information</a></li>
-                            <li><a href="#" data-icon="arrow-r" data-iconpos="right">Camera</a></li>
-                            <li><a href="#" data-icon="arrow-r" data-iconpos="right">Accelerometer</a></li>
+                            <li><a href="notification.html" data-icon="arrow-r" data-iconpos="right" data-ajax="false">Notification</a></li>
+                            <!-- <li><a href="contacts.html" data-icon="arrow-r" data-iconpos="right" data-ajax="false">Contacts</a></li>
+                            <li><a href="device.html" data-icon="arrow-r" data-iconpos="right" data-ajax="false">Device Information</a></li> -->
+                            <li><a href="camera.html" data-icon="arrow-r" data-iconpos="right" data-ajax="false">Camera</a></li>
                         </ul>
                 </section>
                 <section id="dataAPI" class="dataAPI">
@@ -68,7 +67,17 @@ Class: Avdanced Visual Frameworks
                     </div>
                     <div data-role="collapsible" data-collapsed="true">
                         <h3>Accessibility</h3>
-                        <p>Content Coming Soon!</p>
+                        <p>In my demo application I have already included the Section tag, however some other things I could do to make my application more accessible is include the title attribute in the appropriate HTML tags. Also including the alt attribute in image tag, to give a user who may be blind the opportunity for the screen reader program of their choice to output the description of the image.  Some other instance for changing my HTML on my Demo application may include removing the standard HTML styling attributes and using a CSS styling property. Another simple addition I could add to my Demo application is a Language identifier. </p>
+
+                        <p>Some of the common frustrations I see among the examples are Links and Headline. It appears that the Screen Read made by JAWS can interpret web pages very quickly however it interprets the entire context, so for instance say a user only really needs to read the New article or the actual content of the page it may take a second or two for the screen reader to get to that content due to the development of the HTML. By identifying or sectioning your HTML you can enable such screen readers to quickly bypass headers with multiple links.  Another problem is Tables; I have seen multiple websites that use tables to break up text or to wrap text into. This can become extremely frustrating to users who use Screen Readers because the layout of say table and the design of the Screen Reader program, The program is designed to read in standard form left to right. When you wrap text into a table in such format you have the page split into two columns left and right the screen reader will the page across left to right instead of reading the content in its intended form.</p>
+
+                        <p>One of the most commonly known devices designed specifically to support Accessibility is the Hearing Aid, first electronic hearing aid created in 1898. The hearing aid is a device that amplifies the sound, in such a fashion that assists those who have hearing disability.</p>
+
+                        <p>Another devices or collage of devices is the telephone. If you remember the touch-tone phones with the enormously huge buttons, these type of phones were designed for those who needed visual assistance, with the larger button it enabled user who had a hard time seeing smaller visuals. Another thing with this is touch-tone, with the press of each button the device would sound off with a different tone, this allowed those who are completely visually impaired know what button or number was being dialed.</p>
+
+                        <p>Amongst the vast amount of mobile application on both markets today the most notable that I noticed that were designed for accessibility for the Android is “Mobile Accessibility”. The application itself is quite pricy for its intended us which I do not agree with however it is free if you are a Sprint User. The purpose of this application is to simply the use of mobile phones it provides a splash page with the necessity application a user would use and make it visually accessible for those with impaired hearing. The application is also designed to assist those with impaired vision. The application is designed to read text as well as a speech recognition system that allows a user to speak to the device and it would write out what was said.</p>
+
+                        <p>Another application that I notice is the entire OS of both Android and iOS. Both devices have accessibility options to assist those with impaired vision or hearing. With iOS you have Voiceover that works with the Zoom feature to allow a user to magnify text and with that the voice over reads the text to the user. iOS also has Siri which is a feature/application that allows a user to do pretty much anything just by telling the phone to do something or telling Siri I guess. Android as a similar application called Google Voice that does much of the same thing from allowing user to make voice activated calls, reading voicemails yes I said reading as well as text messages.</p>
                     </div>
                     <div data-role="collapsible" data-collapsed="true">
                         <h3>Industry Research</h3>
