@@ -29,6 +29,19 @@
 	float: left;
 }
 
+#contactOutput {
+	margin-left: 10px;
+	color: #000000;
+	background-color: #FFFFFF;
+	padding: 5px 5px 5px 5px;
+	box-shadow: 0px 1px 5px 0px #888;
+	border: 1px solid #888;
+	height: auto;
+	width: 50%;
+	float: left;
+}
+
+
 #contacts ul {
 	width: 75%;
 	float: left;
@@ -39,13 +52,13 @@
 
 /* Camera Page Styling */
 
-#camera ul {
+#imageSection ul {
 	width: 45%;
 	float: left;
 	margin-left: 10px;
 }
 
-#camera img {
+#imageSection img {
 	background-color: #FFFFFF;
 	padding: 5px 5px 5px 5px;
 	border: 1px solid #888;

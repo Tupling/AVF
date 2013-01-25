@@ -44,11 +44,9 @@
         destinationType=navigator.camera.DestinationType;
         // specify contact search criteria
         var options = new ContactFindOptions();
-        filter="";          // empty search string returns all contacts
-        options.multiple=true;      // return multiple results
-        filter = ["displayName"];   // return contact.displayName field
-
-        // find contacts
+        options.filter="";
+        multiple = true;
+        filter = ["displayName","name"];
         navigator.contacts.find(filter, onSuccess, onError, options);
         
         var deviceElement = document.getElementById('contentOutput');
@@ -63,10 +61,10 @@
         };
 
 
-    function onSuccess(contacts) {
-        var contactElem = document.getElementById('contactOutput');
+    function onSuccess(contacts) { 
+        var contactList = document.getElementById('contactOutput');
         for (var i=0; i<contacts.length; i++) {
-                    contactElem.innerHTML = "Name: " + contacts[i].name.formatted + "</ hr>";
+                contactList.innerHTML = "Name: " + contacts[i].name.formatted + "</ hr>" ;
         }
     };
 
@@ -80,18 +78,18 @@
     // alert dialog dismissed
     function alertDismissed() {
         // do something
-    }
+    };
 
     // Show a custom alert
     //
     function showAlert() {
         navigator.notification.alert(
-            'You are the winner!',  // message
+            'You have been evicted!',  // message
             alertDismissed,         // callback
-            'Game Over',            // title
-            'Done'                  // buttonName
+            'Eviction Notice',            // title
+            'Close'                  // buttonName
         );
-    }
+    };
 
 
 function onPhotoDataSuccess(imageData) {
