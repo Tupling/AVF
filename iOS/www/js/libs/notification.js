@@ -1,8 +1,12 @@
-
-    // Wait for Cordova to load
-function onBodyLoad() {
-    document.addEventListener("deviceready", onDeviceReady, false);
+if (location.href.indexOf('reload')==-1)
+{
+   location.href=location.href+'?reload';
+ 
 }
+    // Wait for Cordova to load
+
+    document.addEventListener("deviceready", onDeviceReady, false);
+
     // Cordova is ready
     //
     function onDeviceReady() {

@@ -1,15 +1,15 @@
 
     // Wait for Cordova to load
     //
-    document.addEventListener("deviceready", onDeviceReady, true);
+    document.addEventListener("deviceready", onDeviceReady, false);
 
     // Cordova is ready
     //
     function onDeviceReady() {
         // specify contact search criteria
         var options = new ContactFindOptions();
-        filter="",        // empty search string returns all contacts
-        multiple=true,   // return multiple results
+        filter="";        // empty search string returns all contacts
+        multiple=true;  // return multiple results
         filter = ["*"]; 
 
         // find contacts

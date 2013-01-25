@@ -1,10 +1,18 @@
+  if (location.href.indexOf('reload')==-1)
+{
+   location.href=location.href+'?reload';
+ 
+}
+
+
+
    var pictureSource;   // picture source
     var destinationType; // sets the format of returned value 
 
     // Wait for Cordova to connect with the device
-function onBodyLoad() {
+
     document.addEventListener("deviceready",onDeviceReady,false);
-}
+
     // Cordova is ready to be used!
     //
     function onDeviceReady() {
