@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- Dale Tupling
-Project: iOS Demo Application
+Project: Android Demo Application
 Term: 0113
 Class: Avdanced Visual Frameworks
 File: tweet.html 
@@ -10,20 +10,18 @@ Contains dynamically added twitter updates.
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="format-detection" content="telephone=no" />
-        <meta name="HandheldFriendly" content="True">
-        <meta name="MobileOptimized" content="330"/>
-        <!-- viewport used to automatically adjust to page width depending on device page is viewed on -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        
         <link rel="stylesheet" href="css/index.css" />
         <script type="text/javascript" charset="utf-8" src="cordova-2.3.0.js"></script>
         <script src="js/libs/modernizr.custom.min.js"></script>
-        <title>iOS Demo Application</title>
+        <title>Android Demo Application</title>
     </head>
     <body>
-        <div data-role="page" id="cameraHead" data-add-back-btn="true" data-theme="a">
+        <div data-role="page" id="contactsHead" data-add-back-btn="true" data-theme="a">
             <div data-role="header" data-position="inline">
                 <a href="index.html" rel="external" data-icon="home">Home</a>
-                <h1>iOS Camera Feature</h1>
+                <h1>Android Contacts</h1>
             </div>
                 <section id="info" class="info">
                     <ul data-role="listview">
@@ -34,15 +32,12 @@ Contains dynamically added twitter updates.
                         </li>
                     </ul>
                 </section>
-                <section id="imageSection" class="imageSection">
+                <section id="contactSection">
                     <div data-role="content">
-                        
-                        <ul data-role="listview">
-                            <li data-role="list-divider-a" data-theme="a">Camera Options</li>
-                            <li><a href="#" id="capture-bn" data-ajax="false">Capture Photo</a></li>
-                            <li><a href="#" id="capture-edit-bn" data-ajax="false">Capture Edited Photo</a></li>
+                        <ul data-role="listview" id="left">
+                            <li data-role="list-divider-a" data-theme="a">Contacts</li>
+                            <li id="contactOutput">Please wait while we gather your devices information...</li>
                         </ul>
-                        <img id="smallImage" src="" alt="Captured Image" />
                     </div>
                 </section>
 

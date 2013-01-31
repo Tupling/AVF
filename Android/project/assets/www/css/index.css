@@ -15,6 +15,20 @@
 	float: left;
 }
 
+
+#contactOutput {
+	margin-left: 10px;
+	color: #000000;
+	background-color: #FFFFFF;
+	padding: 5px 5px 5px 5px;
+	box-shadow: 0px 1px 5px 0px #888;
+	border: 1px solid #888;
+	height: auto;
+	width: 50%;
+	float: left;
+}
+
+
 #contacts ul {
 	width: 75%;
 	float: left;
@@ -24,6 +38,23 @@
 
 
 /* Camera Page Styling */
+@media only screen and (max-device-width: 480px){
+
+	#camera img {
+		background-color: #FFFFFF;
+		padding: 5px 5px 5px 5px;
+		border: 1px solid #888;
+		box-shadow: 0px 1px 5px 0px #888;
+		display: block;
+		width: 80%;
+		height: auto;
+		margin-top: 10px;
+	}
+
+	#camera ul {
+		width: 80%;
+
+	}
 
 #camera ul {
 	width: 45%;

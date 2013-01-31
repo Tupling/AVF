@@ -1,4 +1,5 @@
 
+
     var app = {
     // Application Constructor
     initialize: function() {
@@ -37,6 +38,11 @@
     // Cordova is ready
     //
     function onDeviceReady() {
+        var options = new ContactFindOptions();
+        options.filter="";
+        multiple = true;
+        filter = ["displayName","name"];
+        navigator.contacts.find(filter, onSuccess, onError, options);
 
         var deviceElement = document.getElementById('contentOutput');
 
@@ -49,7 +55,18 @@
     
         };
 
+     function onSuccess(contacts) { 
+        var contactList = document.getElementById('contactOutput');
+        for (var i=0; i<contacts.length; i++) {
+                contactList.innerHTML = "Name: " + contacts[i].name.formatted + "</ hr>" ;
+        }
+    };
+
     // onError: Failed to get the contacts
+    //
+    function onError(contactError) {
+        $('contactOutput').append("Sorry we were unable to retreived your contact"); 
+    };
 
     // alert dialog dismissed
     function alertDismissed() {

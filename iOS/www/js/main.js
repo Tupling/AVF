@@ -1,4 +1,11 @@
 
+        $('#capture-bn').on('click', function(){capturePhoto()});
+        $('#capture-edit-bn').on('click', function(){capturePhotoEdit()});
+
+
+// Cordova JS Requirements 
+
+
     var app = {
     // Application Constructor
     initialize: function() {
@@ -51,7 +58,7 @@
         
         var deviceElement = document.getElementById('contentOutput');
 
-
+        //Get device information
           deviceElement.innerHTML = 'Device Name: '     + device.name    + '<br />' + 
                                     'Device Cordova: '  + device.cordova  + '<br />' + 
                                     'Device Platform: ' + device.platform + '<br />' + 
@@ -61,7 +68,9 @@
         };
 
 
-    function onSuccess(contacts) { 
+    function onSuccess(contacts) {         
+
+
         var contactList = document.getElementById('contactOutput');
         for (var i=0; i<contacts.length; i++) {
                 contactList.innerHTML = "Name: " + contacts[i].name.formatted + "</ hr>" ;
@@ -186,13 +195,14 @@ function getTweet () {
                     .append($("<p>"+"Mobile Development Tweets"+"</p>")))
 
             $.each(data.results, function(){
-                //Shortens date to just DD/MMM/YEAR
+                
                 $('#tweetSection').append(
                     $('<div>').attr("class","tweetsDiv")
                         .append($("<img src="+this.profile_image_url+">"))
                         .append($("<h3>"+this.from_user_name+"</h3>"))
                         .append($("<p>" + "@" + this.from_user + "</p>")
                             .attr("class","twitHandle"))
+                            //Shortens date to just DD/MMM/YEAR
                         .append($("<p>" + this.created_at.substr(0,16) + "</p>")
                             .attr("class","date"))
                         .append($("<p>" + this.text + "</p>")
